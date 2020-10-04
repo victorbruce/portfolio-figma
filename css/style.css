@@ -1,7 +1,38 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+  --dark-magenta: hsl(300, 43%, 22%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  /* FONTS */
+  --body-copy: 15px;
+  --spartan-font: "Spartan", sans-serif;
+}
+
+body {
+  font-family: var(--spartan-font);
+  font-size: var(--body-copy);
+  font-weight: 400;
+  height: 100vh;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+
 }
