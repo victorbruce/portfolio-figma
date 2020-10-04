@@ -19,11 +19,19 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: var(--spartan-font);
   font-size: var(--body-copy);
   font-weight: 400;
-  height: 100vh;
   line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/bg-pattern-top-desktop.svg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 /* SOCIAL SECTION */
@@ -33,20 +41,20 @@ body {
 
 .social__inner {
   max-width: 1440px;
-  padding: 100px;
+  padding: 150px 110px 50px 110px;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .social__stats {
-  width: 35%;
+  width: 45%;
 }
 
 .social__stats__title h1 {
   font-size: 3.33rem;
   font-weight: 700;
-  padding-bottom: 0.73rem;
+  margin-bottom: 1rem;
   letter-spacing: 2px;
   line-height: 3rem;
   color: var(--dark-magenta);
@@ -86,9 +94,75 @@ body {
 }
 
 .best-tech {
-  margin-left: 4.5rem;
+  margin-left: 5rem;
 }
 
+/* TESTIMONIALS */
+.testimonials {
+  width: 100%;
+  background-image: url("../images/bg-pattern-top-desktop.svg");
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.testimonials__inner {
+  max-width: 1440px;
+  padding: 0px 100px 100px 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonials__card {
+  max-width: 400px;
+  background: var(--dark-magenta);
+  color: var(--white);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+}
+
+.testimonials__card__header {
+  display: flex;
+}
+
+.testimonials__card__body p {
+  color: var(--light-grayish-magenta);
+  opacity: 0.8;
+}
+
+.card__image {
+  margin-right: 2rem;
+  width: 50px;
+  margin-bottom: 2rem;
+}
+
+.card__image img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.card__details h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card__details h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--soft-pink);
+  opacity: 0.7;
+}
+
+.anne {
+  margin-top: 5rem;
+}
+
+.irene {
+  margin-top: 2.5rem;
+}
 
 /* ATTRIBUTION SECTION */
 .attribution {
