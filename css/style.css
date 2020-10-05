@@ -130,7 +130,7 @@ body {
 
 .card__image {
   margin-right: 2rem;
-  width: 50px;
+  width: 80px;
   margin-bottom: 2rem;
 }
 
@@ -148,8 +148,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 1px;
-  color: var(--soft-pink);
-  opacity: 0.7;
+  color: hsl(333, 73%, 67%);
 }
 
 .anne {
