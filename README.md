@@ -6,3 +6,4 @@ Frontend Mentor coding challenge.
 
 ## Live Demo
 
+[social-proof-section](https://vb-social-proof-section.netlify.app/)
