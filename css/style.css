@@ -18,6 +18,10 @@
   --spartan-font: "Spartan", sans-serif;
 }
 
+html {
+  font-size: var(--body-copy);
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -70,7 +74,8 @@ body {
 }
 
 .social__rating {
-  max-width: 450px;
+  width: 450px;
+  max-width: 85%;
   background: var(--light-grayish-magenta);
   margin-bottom: 1rem;
   border-radius: 6px;
@@ -112,10 +117,10 @@ body {
 }
 
 .testimonials__card {
-  max-width: 400px;
+  max-width: 390px;
   background: var(--dark-magenta);
   color: var(--white);
-  padding: 3rem 2rem;
+  padding: 3rem 1.7rem;
   border-radius: 8px;
 }
 
@@ -169,6 +174,86 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+@media (max-width: 1024px) {
+  .social__inner {
+    padding: 150px 32px 50px 32px;
+    justify-content: space-around;
+  }
+
+  .social__ratings {
+    width: 50%;
+  }
+
+  .social__rating {
+    max-width: 90%;
+  }
+
+  .testimonials__inner {
+    padding: 0px 32px 100px 32px;
+  }
+
+  .testimonials__card {
+    max-width: 32%;
+  }
+}
+
+@media (max-width: 768px) {
+  .social__inner {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 1rem 50px 1rem;
+  }
+  .social__stats {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .social__stats__title h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0;
+    padding: 0 32px;
+    text-align: center;
+  }
+
+  .social__ratings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social__rating {
+    max-width: 450px !important;
+  }
+
+  .reports,
+  .best-tech {
+    margin-left: 0;
+  }
+
+  .testimonials {
+    width: 100%;
+  }
+
+  .testimonials__inner {
+    flex-direction: column;
+    padding: 0 1rem 50px 1rem;
+  }
+
+  .testimonials__card {
+    min-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .anne,
+  .irene {
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width: 450px) {
   body {
     background-image: url("../images/bg-pattern-top-mobile.svg");
@@ -199,10 +284,12 @@ body {
   }
 
   .social__rating {
+    width: 100%;
     flex-direction: column;
   }
 
-  .reports, .best-tech {
+  .reports,
+  .best-tech {
     margin-left: 0;
   }
 
@@ -220,7 +307,8 @@ body {
     padding: 2rem 1rem;
   }
 
-  .anne, .irene {
+  .anne,
+  .irene {
     margin-top: 1rem;
   }
 }
