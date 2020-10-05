@@ -137,18 +137,19 @@ body {
 .card__image img {
   border-radius: 50%;
   width: 100%;
+  object-fit: cover;
 }
 
-.card__details h3 {
+.card__details h2 {
   font-size: 1rem;
   font-weight: 500;
 }
 
-.card__details h4 {
+.card__details h3 {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 1px;
-  color: hsl(333, 73%, 67%);
+  color: hsla(333, 92%, 70%, 1);
 }
 
 .anne {
