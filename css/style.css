@@ -24,7 +24,7 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   font-family: var(--spartan-font);
   font-size: var(--body-copy);
   font-weight: 400;
@@ -32,10 +32,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("../images/bg-pattern-top-desktop.svg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+  background: url("../images/bg-pattern-top-desktop.svg") left top no-repeat,
+    url("../images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
 }
 
 /* SOCIAL SECTION */
@@ -174,6 +172,15 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .testimonials__inner {
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.25em;
+  }
+}
+
 @media (max-width: 1024px) {
   .social__inner {
     padding: 150px 32px 50px 32px;
@@ -206,7 +213,7 @@ body {
     padding: 100px 1rem 50px 1rem;
   }
   .social__stats {
-    width: 100%;
+    width: 70%;
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -231,7 +238,7 @@ body {
 
   .reports,
   .best-tech {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 
   .testimonials {
@@ -241,10 +248,12 @@ body {
   .testimonials__inner {
     flex-direction: column;
     padding: 0 1rem 50px 1rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .testimonials__card {
-    min-width: 100%;
+    max-width: 450px;
     padding: 2rem 1rem;
   }
 
@@ -256,7 +265,8 @@ body {
 
 @media (max-width: 450px) {
   body {
-    background-image: url("../images/bg-pattern-top-mobile.svg");
+    background: url("../images/bg-pattern-top-mobile.svg") left top no-repeat,
+      url("../images/bg-pattern-bottom-mobile.svg") right bottom no-repeat;
     height: 100%;
     width: 100%;
   }
