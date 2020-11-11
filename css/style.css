@@ -145,16 +145,33 @@ body {
   .testimonials__inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(28rem, 1fr);
     gap: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .testimonials__inner {
-        grid-template-columns: 1fr; } }
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto; } }
 
 .card {
   background-color: var(--very-dark-magenta);
   color: var(--light-grayish-magenta);
   padding: 3rem 4rem;
   border-radius: 5px; }
+  .card--colton {
+    align-self: start; }
+    @media only screen and (max-width: 37.5em) {
+      .card--colton {
+        align-self: start; } }
+  .card--irene {
+    align-self: center; }
+    @media only screen and (max-width: 37.5em) {
+      .card--irene {
+        align-self: start; } }
+  .card--anne {
+    align-self: end; }
+    @media only screen and (max-width: 37.5em) {
+      .card--anne {
+        align-self: start; } }
   .card__head {
     display: grid;
     grid-template-columns: 5rem 1fr;
