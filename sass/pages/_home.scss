@@ -154,7 +154,7 @@
   }
 }
 
-.reviews {
+.testimonials {
   grid-area: rw;
 
   margin-top: 10rem;
@@ -166,10 +166,48 @@
     @include respond(phone) {
       grid-template-columns: 1fr;
     }
-    gap: 2rem;
+    gap: 3rem;
+  }
+}
+
+.card {
+  background-color: var(--very-dark-magenta);
+  color: var(--light-grayish-magenta);
+  padding: 3rem 4rem;
+  border-radius: 5px;
+
+  &__head {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    column-gap: 2rem;
+    align-items: center;
+
+    margin-bottom: 3rem;
   }
 
-  &__card {
-    background-color: lightpink;
+  &__body {
+    & p {
+      line-height: 1.6;
+    }
+  }
+}
+
+.profile {
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  &__status {
+    color: var(--soft-pink);
+    font-weight: 300;
   }
 }
