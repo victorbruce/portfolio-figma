@@ -1,7 +1,6 @@
 .home {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(10rem, auto);
   column-gap: 2rem;
   grid-template-areas:
     ". sp sp sp sp sp sp sp sp sp sp ."
@@ -10,17 +9,16 @@
   @include respond(tablet) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-    "sp sp sp sp"
-    "rw rw rw rw";
-    
+      "sp sp sp sp"
+      "rw rw rw rw";
   }
 
   @include respond(smallphone) {
     grid-template-columns: repeat(2, 1fr);
 
     grid-template-areas:
-    "sp sp"
-    "rw rw";
+      "sp sp"
+      "rw rw";
   }
 
   position: relative;
@@ -65,20 +63,94 @@
   &__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(20rem, auto);
     gap: 2rem;
+    align-items: start;
 
     @include respond(phone) {
       grid-template-columns: auto;
+      gap: 4rem;
     }
   }
 
   &__content {
-    background: lightblue;
+    width: 80%;
+
+    @include respond(desktop-md) {
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1;
+
+    @include respond(phone) {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--dark-grayish-magenta);
   }
 
   &__ratings {
-    background-color: moccasin;
+  }
+
+  &__rating {
+    display: flex;
+
+    max-width: 40rem;
+    padding: 2rem;
+    border-radius: 5px;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+
+    background-color: var(--light-grayish-magenta);
+
+    &--guru {
+      margin-left: auto;
+      margin-right: auto;
+
+      @include respond(phone) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &--best-tech {
+      margin-left: auto;
+
+      @include respond(phone) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__rate-review {
+    margin-left: 2rem;
+    font-weight: 700;
+
+    @include respond(phone) {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -90,13 +162,10 @@
   &__inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(10rem, auto);
 
     @include respond(phone) {
       grid-template-columns: 1fr;
     }
-
-    // justify-content: space-between;
     gap: 2rem;
   }
 

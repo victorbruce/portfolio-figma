@@ -16,4 +16,10 @@
       @content;
     }
   }
+
+  @if $breakpoint == desktop-md {
+    @media only screen and (max-width: $breakpoint-desktop-md-screens) {
+      @content;
+    }
+  }
 }

@@ -10,6 +10,11 @@
 
 html {
   font-size: 62.5%; // 1rem = 10px
+  
+  @include respond(desktop-md) {
+    font-size: 50%; // 1rem = 8px
+  }
+
   box-sizing: border-box;
   font-family: 'Spartan', sans-serif;
 }
