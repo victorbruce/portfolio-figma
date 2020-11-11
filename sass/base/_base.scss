@@ -17,9 +17,8 @@ html {
 body {
   background-color: white;
   background: url(../../images/bg-pattern-top-desktop.svg) left top no-repeat, url(../../images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
-  background-size: fixed;
-  // background-repeat: no-repeat;
-
+  
   color: var(--very-dark-magenta);
   font-size: var(--body-text);
+  min-height: 100vh;
 }
