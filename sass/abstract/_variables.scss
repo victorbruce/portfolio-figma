@@ -12,5 +12,6 @@
   --body-text: 1.5rem;
 }
 
-$breakpint-small-screens: 23.44em;
-$breakpoint-desktop-screens: 75em;
+$breakpoint-tiny-screens: 23.44em; // 375 / 16
+$breakpoint-small-screens: 37.5em; // 600 / 16
+$breakpoint-tablet-screens: 48em;  // 768 / 16
