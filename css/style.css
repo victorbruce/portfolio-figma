@@ -29,24 +29,23 @@ body {
   background-color: white;
   background: url(../../images/bg-pattern-top-desktop.svg) left top no-repeat, url(../../images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
   color: var(--very-dark-magenta);
-  font-size: var(--body-text);
-  min-height: 100vh; }
+  font-size: var(--body-text); }
 
 .home {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2rem;
-  grid-template-areas: ". sp sp sp sp sp sp sp sp sp sp ." ". rw rw rw rw rw rw rw rw rw rw .";
+  grid-template-areas: ". sp sp sp sp sp sp sp sp sp sp ." ". rw rw rw rw rw rw rw rw rw rw ." ". at at at at at at at at at at .";
   position: relative;
-  padding: 10rem 2rem; }
+  padding: 10rem 2rem 0 2rem; }
   @media only screen and (max-width: 48em) {
     .home {
       grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "sp sp sp sp" "rw rw rw rw"; } }
+      grid-template-areas: "sp sp sp sp" "rw rw rw rw" "at at at at"; } }
   @media only screen and (max-width: 23.44em) {
     .home {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "sp sp" "rw rw"; } }
+      grid-template-areas: "sp sp" "rw rw" "at at"; } }
 
 /* For development purposes, displays a grid on my screen */
 #grid {
@@ -195,3 +194,9 @@ body {
 .profile__status {
   color: var(--soft-pink);
   font-weight: 300; }
+
+.attribution {
+  grid-area: at;
+  padding-bottom: 2rem;
+  text-align: center;
+  margin-top: 5rem; }

@@ -4,13 +4,15 @@
   column-gap: 2rem;
   grid-template-areas:
     ". sp sp sp sp sp sp sp sp sp sp ."
-    ". rw rw rw rw rw rw rw rw rw rw .";
+    ". rw rw rw rw rw rw rw rw rw rw ."
+    ". at at at at at at at at at at .";
 
   @include respond(tablet) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "sp sp sp sp"
-      "rw rw rw rw";
+      "rw rw rw rw"
+      "at at at at";
   }
 
   @include respond(smallphone) {
@@ -18,11 +20,12 @@
 
     grid-template-areas:
       "sp sp"
-      "rw rw";
+      "rw rw"
+      "at at";
   }
 
   position: relative;
-  padding: 10rem 2rem;
+  padding: 10rem 2rem 0 2rem;
 }
 
 /* For development purposes, displays a grid on my screen */
@@ -236,4 +239,12 @@
     color: var(--soft-pink);
     font-weight: 300;
   }
+}
+
+.attribution {
+  grid-area: at;
+  padding-bottom: 2rem;
+
+  text-align: center;
+  margin-top: 5rem;
 }
