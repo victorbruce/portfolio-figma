@@ -1,0 +1,18 @@
+:root {
+  /* Primary Colors */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* Neutral Colors */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Font */
+  --body-text: 1.5rem;
+}
+
+$breakpoint-tiny-screens: 23.44em; // 375 / 16
+$breakpoint-small-screens: 37.5em; // 600 / 16
+$breakpoint-tablet-screens: 48em;  // 768 / 16
+$breakpoint-desktop-md-screens: 64em; // 1024 / 16
