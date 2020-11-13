@@ -35,9 +35,11 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2rem;
-  grid-template-areas: ". sp sp sp sp sp sp sp sp sp sp ." ". rw rw rw rw rw rw rw rw rw rw ." ". at at at at at at at at at at .";
+  grid-template-areas: "sp sp sp sp sp sp sp sp sp sp sp sp" "rw rw rw rw rw rw rw rw rw rw rw rw" "at at at at at at at at at at at at";
   position: relative;
-  padding: 10rem 2rem 0 2rem; }
+  padding: 10rem 2rem 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto; }
   @media only screen and (max-width: 48em) {
     .home {
       grid-template-columns: repeat(4, 1fr);
@@ -56,7 +58,7 @@ body {
   min-height: 100vh;
   background: transparent;
   padding: 0 2rem;
-  display: none;
+  display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(100%, auto);
   column-gap: 2rem; }
